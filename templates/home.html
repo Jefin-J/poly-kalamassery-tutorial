@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My First Django Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Century Gothic;
+        }
+
+        header{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://img.freepik.com/free-photo/sunset-pool_1203-3192.jpg?w=826&t=st=1674652396~exp=1674652996~hmac=7a9769ed3e0377dcec51ca3f76c99dbcbb600b1e0367207479d0658d75696e55");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        ul{
+            list-style-type: none;
+            float: right;
+            margin-top: 30px;
+        }
+
+        ul li{
+            display: inline-block;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+        }
+
+        ul li a:hover{
+            background-color: #fff;
+            color: black;
+        }
+
+        ul li.active a{
+            background-color: #fff;
+            color: black;
+        }
+
+        .logo img{
+            float: left;
+            width: 135px;
+            height: auto;
+            padding-top:20px;
+        }
+
+        .main{
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .title{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .title h1{
+            color: #fff;
+            font-size: 70px;
+        }
+
+        .button{
+            position: absolute;
+            top: 63%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .btn{
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.6s ease;
+        }
+
+        .btn:hover{
+            background-color: #fff;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/1251/1251070.png?w=740&t=st=1674652095~exp=1674652695~hmac=66ab697ab23e08dc6cdbc11e2d939aa0ebb27c3274e90a0aa87874e5279c507e">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>Beach View</h1>
+        </div>
+        <div class="button">
+            <a href="https://www.youtube.com/watch?v=8kdv1OmldMs" class="btn">Watch Video</a>
+            <a href="https://verdantitsolutions.com/" class="btn">Learn More</a>
+        </div>
+    </header>
+</body>
+</html>
